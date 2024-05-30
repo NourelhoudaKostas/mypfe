@@ -105,6 +105,7 @@ class AutheficationController extends Controller
       $user->Username = $request->name;
       $user->email = $request->email;
       $user->playlist_id = $request->playlist_id;
+      $user->activation = 1;
       $user->password = Hash::make($request->password);
       $res = $user->save();
       if ($res) {

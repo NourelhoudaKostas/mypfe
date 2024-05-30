@@ -207,9 +207,9 @@
         @endforeach
        
         </div>
-       @if ($test->score < $test->questionCount / 2)
+       @if ( isset($test) && $test->score < $test->questionCount / 2 || !isset($test->score))
 
-           
+            
        
         {{-- questions --}}
        
