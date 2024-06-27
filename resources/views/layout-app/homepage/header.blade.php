@@ -25,6 +25,9 @@
                         <li class="nav-item ">
                             <a class="nav-link {{ (Route::currentRouteName() == 'homepage') ? 'activer' : '' }}" href="{{ route('homepage') }}">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('about')}}">about</a>
+                        </li>
                         @if (session('LoginId_U'))
                         <li class="nav-item">
                             <a class="nav-link {{ (Route::currentRouteName() == 'Dashboard') ? 'activer' : '' }}" href="{{ route('Dashboard') }}">Dashboard</a>

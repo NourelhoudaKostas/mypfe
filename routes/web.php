@@ -26,6 +26,8 @@ use App\Http\Controllers\Welcom_To_ENSET_Controller;
 */
 
 Route::get('/', [Welcom_To_ENSET_Controller::class, 'index'])->name('homepage');
+Route::get('/about', [Welcom_To_ENSET_Controller::class, 'about'])->name('about');
+
 Route::get('/Dashboard', [Welcom_To_ENSET_Controller::class, 'about'])->name('Dashboard');
 Route::get('/contact', [Welcom_To_ENSET_Controller::class, 'contact'])->name('contact');
 Route::get('/signup', [Welcom_To_ENSET_Controller::class, 'signup'])->name('signup');

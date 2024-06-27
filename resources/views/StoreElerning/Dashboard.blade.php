@@ -21,9 +21,7 @@
                     <h1 class="display-4 text-primary mb-4">You failed the test {{ $item->playlist->name }}</h1>
 
                 @endif
-                <p>Nous offrons une variété de cours dans les domaines de l'informatique, du développement web, du design graphique, du marketing numérique et bien plus encore. Notre équipe d'experts est là pour vous guider à chaque étape du chemin.</p>
-                <p>Rejoignez-nous aujourd'hui et découvrez comment nous pouvons vous aider à réaliser vos objectifs d'apprentissage et de carrière !</p>
-                <!-- Modify the href attribute with your contact page URL or phone number -->
+                <p>Nous offrons une variété de cours dans les domaines de l'informatique, du développement web, du design graphique, du marketing numérique et bien plus encore. Notre équipe d'experts est là pour vous guider à chaque étape du chemin.</p>           <p>Merci d'avoir créé et partagé votre quiz avec nous. Que vos étudiants réussissent ou échouent, nous sommes ici pour les soutenir et pour vous aider à améliorer votre contenu. Rejoignez-nous aujourd'hui et découvrez comment nous pouvons collaborer pour atteindre nos objectifs d'apprentissage et de carrière !</p>                         <!-- Modify the href attribute with your contact page URL or phone number -->
                 <h4>Num questions : {{ $item->playlist->questions->count() }}</h4>
                 <h4>your score : {{ $item->score }}</h4>
                 @if ($item->score >= $item->playlist->questions->count() / 2)

@@ -103,37 +103,107 @@
 <!-- More Content End -->
 
 <!-- Services Start -->
-<section class="Services" id="Services">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<style>
+    .accreditation-card {
+        position: relative;
+        overflow: hidden;
+        min-height: 350px;
+        perspective: 1000px;
+        transition: transform 0.5s, box-shadow 0.5s;
+        cursor: pointer;
+    }
+    .accreditation-card:hover {
+        transform: translateY(-10px) rotateX(5deg) scale(1.05);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+    .accreditation-card .card-body {
+        position: relative;
+        z-index: 1;
+    }
+    .accreditation-card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 123, 255, 0.2);
+        transition: opacity 0.3s, transform 0.5s;
+        transform: translateY(100%);
+        z-index: 0;
+    }
+    .accreditation-card:hover:before {
+        opacity: 0.6;
+        transform: translateY(0);
+    }
+    .accreditation-icon {
+        font-size: 60px;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+<section class="Accreditation" id="Accreditation">
     <div class="container">
-        <h2 class="heading text-center mb-5">Nos Cours <span>Populaires</span></h2>
+        <h2 class="heading text-center mb-5">Accréditations et <span>Reconnaissances</span></h2>
         <div class="row">
-            <div class="services-box col-lg-4 col-md-6">
-                <div class="text-center mb-5">
-                    <i class="bx bx-code-alt"></i>
-                    <h3>Développement Web</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem assumenda dolores suscipit ipsa sunt velit culpa vel, vitae corporis quaerat?</p>
-                    <a href="#" class="btn btn-primary">Rejoindre Maintenant</a>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="card accreditation-card text-center mb-5" data-aos="fade-up">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-university accreditation-icon"></i>
+                        <h3 class="card-title">Accrédité par le Ministère de l'Éducation</h3>
+                        <p class="card-text">Notre école est officiellement reconnue par le Ministère de l'Éducation pour offrir des formations de qualité supérieure.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="services-box text-center mb-5">
-                    <i class="bx bx-paint"></i>
-                    <h3>Design Graphique</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem assumenda dolores suscipit ipsa sunt velit culpa vel, vitae corporis quaerat?</p>
-                    <a href="#" class="btn btn-primary">Rejoindre Maintenant</a>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="card accreditation-card text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-globe accreditation-icon"></i>
+                        <h3 class="card-title">Certifications Internationales</h3>
+                        <p class="card-text">Nous sommes certifiés par plusieurs organismes internationaux, garantissant la reconnaissance mondiale de nos diplômes.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="services-box text-center mb-5">
-                    <i class="bx bx-bar-chart-alt"></i>
-                    <h3>Marketing Digital</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem assumenda dolores suscipit ipsa sunt velit culpa vel, vitae corporis quaerat?</p>
-                    <a href="#" class="btn btn-primary">Rejoindre Maintenant</a>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="card accreditation-card text-center mb-5" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-trophy accreditation-icon"></i>
+                        <h3 class="card-title">Prix et Distinctions</h3>
+                        <p class="card-text">Nos programmes et notre école ont reçu de nombreuses distinctions pour l'excellence en éducation et en formation professionnelle.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- FontAwesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 800, // Animation duration (in ms)
+        once: false, // Animation happens each time element comes into view
+    });
+</script>
 <!-- Services End -->
 
 <!-- Testimonial Start -->
