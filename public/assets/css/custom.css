@@ -63,14 +63,15 @@ Custom Css
        */
     
     .navbar a{
-        color: var(--text-color);
+        /* color: var(--text-color); */
         font-weight: 600;
         font-size: var(--p-font);
         padding: 10px 22px;
         transition: all .40s ease ;
     }
     .navbar a:hover{
-        color: var(--main-color);
+        /* color: var(--main-color); */
+        color: #1c1c1c;
 
     }
     .header-icons{
@@ -487,7 +488,7 @@ p {
     }
 }
 
-/* form {
+form {
     position: absolute;
     inset: 2px;
     border-radius: 50px 5px;
@@ -496,13 +497,13 @@ p {
     padding: 30px 30px;
     display: flex;
     flex-direction: column;
-} */
+}
 
 #success {
     display: none;
 }
 .contact{
-    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgb(18, 7, 114) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(15n0deg, rgba(2,0,36,1) 0%, rgb(18, 7, 114) 35%, rgba(0,212,255,1) 100%);
     margin-top: 4   px;
 }
 

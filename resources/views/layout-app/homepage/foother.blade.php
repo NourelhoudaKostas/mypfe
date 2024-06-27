@@ -23,10 +23,10 @@
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-blue border-bottom pb-3 border-light">Further Info</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Home</a></li>
-                    <li><a class="text-decoration-none" href="#">About Us</a></li>
-                    <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                    <li><a class="text-decoration-none" href="#">Contact</a></li>
+                    <li><a class="text-decoration-none" href="{{ route('homepage') }}">Home</a></li>
+                    <li><a class="text-decoration-none" href="{{route('about')}}">About Us</a></li>
+                    {{-- <li><a class="text-decoration-none" href="{{route('Storepage')}}">FAQs</a></li> --}}
+                    <li><a class="text-decoration-none" href="{{route('contact')}}">Contact</a></li>
                 </ul>
             </div>
 
