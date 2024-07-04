@@ -26,7 +26,7 @@ use App\Http\Controllers\Welcom_To_ENSET_Controller;
 */
 
 Route::get('/', [Welcom_To_ENSET_Controller::class, 'index'])->name('homepage');
-Route::get('/about', [Welcom_To_ENSET_Controller::class, 'about'])->name('about');
+Route::get('/propos', [Welcom_To_ENSET_Controller::class, 'propos'])->name('propos');
 
 Route::get('/Dashboard', [Welcom_To_ENSET_Controller::class, 'about'])->name('Dashboard');
 Route::get('/contact', [Welcom_To_ENSET_Controller::class, 'contact'])->name('contact');
@@ -35,6 +35,8 @@ Route::get('/signup', [Welcom_To_ENSET_Controller::class, 'signup'])->name('sign
 
 Route::get('/Stor', [Welcom_To_ENSET_Controller::class, 'Store_index'])->name('Storepage');
 Route::get('/Diplôme', [Welcom_To_ENSET_Controller::class, 'Diplôme'])->name('Diplôme');
+
+
 
 Route::group(['namespace' => 'AutheficationController'], function () {
    Route::get('/login', [AutheficationController::class, 'login_view'])->name('login');
@@ -50,6 +52,9 @@ Route::group(['namespace' => 'AutheficationController'], function () {
 //Route::get('/back',function(){ return view('authentification.messagebackpassword');});
 //admin
 Route::get('/Admin/dashbord', [AdminController::class, 'dashbord_view'])->name('dashbord_admin');
+
+//certificat
+Route::get('/certificat', [AdminController::class, 'certificat'])->name('certificat');
 //profile
 Route::get('/Admin/profile', [AdminController::class, 'profile_admin'])->name('profile_admin');
 

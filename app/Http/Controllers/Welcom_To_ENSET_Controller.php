@@ -40,6 +40,10 @@ class Welcom_To_ENSET_Controller extends Controller
 
         return view('StoreElerning.Dashboard',compact('tests'));
     }
+    public function propos()
+      {
+         return view('StoreElerning.propos');
+      }
     public function contact()
       {
          return view('StoreElerning.contact');

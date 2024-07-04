@@ -144,7 +144,7 @@
     }
     .accreditation-icon {
         font-size: 60px;
-        color: #007bff;
+        color: #232424;
         margin-bottom: 20px;
     }
 </style>

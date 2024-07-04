@@ -15,21 +15,21 @@
                 <form name="sentMessage" action="{{route('contactus')}}" method="Post" id="contactForm" novalidate="novalidate">
                     @csrf
                     <div class="mb-4">
-                        <h3 class="text-center text-info">Contact Us</h3>
+                        <h3 class="text-center text-info">Nous contacter</h3>
                         @if (Session::has('success'))
                             <div class="alert alert-success">{{ Session::get('success') }}</div>
                         @endif
                     </div>
                     <div class="form-group control-group">
-                        <input type="text" name="yourname" class="form-control border-0 p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                        <input type="text" name="yourname" class="form-control border-0 p-4" id="name" placeholder=" Name" required="required" data-validation-required-message="Please enter your name" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group control-group">
-                        <input type="email" name="email" class="form-control border-0 p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                        <input type="email" name="email" class="form-control border-0 p-4" id="email" placeholder=" Email" required="required" data-validation-required-message="Please enter your email" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group control-group">
-                        <input type="text" name="subject" class="form-control border-0 p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                        <input type="text" name="téléphone," class="form-control border-0 p-4" id="subject" placeholder="téléphone, " required="required" data-validation-required-message="Please enter a téléphone" />
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group control-group">
@@ -37,7 +37,7 @@
                         <p class="help-block text-danger"></p>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
+                        <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">Envoyez un message</button>
                     </div>
                 </form>
             

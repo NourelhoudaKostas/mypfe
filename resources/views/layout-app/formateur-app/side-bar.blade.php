@@ -4,12 +4,12 @@
      <i class="fas fa-times"></i>
   </div>
 
-  <div class="profile">
+  {{-- <div class="profile">
      <img src="images/pic-1.jpg" class="image" alt="">
      <h3 class="name">{{$formateur->Username}}</h3>
      <p class="role">studen</p>
      <a href="profile.html" class="btn">view profile</a>
-  </div>
+  </div> --}}
 
   <nav class="navbar">
      <a class="{{ (Route::currentRouteName() == 'dashbord_formateur') ? 'activee' : '' }}" href="{{ route('dashbord_formateur')}}"><i class="fas fa-home"></i><span>home</span></a>

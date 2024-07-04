@@ -84,10 +84,10 @@
                                                             {{ $message }}
                                                         @enderror </span>
                                                     </div>
-                                                    <div class="mb-3">
+                                                    {{-- <div class="mb-3">
                                                         <label for="edit_type_cours" class="form-label">Type of Course</label>
                                                         <input type="text" class="form-control" id="edit_type_cours" name="type_cours" value="{{$formateur->type_cours}}"  >
-                                                    </div>
+                                                    </div> --}}
                                                     <div class="mb-3">
                                                         <label for="edit_specialite" class="form-label">specialité</label>
                                                         <select class="form-select" aria-label="Default select example" id="edit_specialite" name="specialite">
@@ -107,10 +107,10 @@
                                                         <label for="edit_cin" class="form-label">CIN</label>
                                                         <input type="text" class="form-control" id="edit_cin" name="cin" value="{{ $formateur->cin }}">
                                                     </div>
-                                                    <div class="mb-3">
+                                                    {{-- <div class="mb-3">
                                                         <label for="edit_course_code" class="form-label">Course Code</label>
                                                         <input type="text" class="form-control" id="edit_course_code" name="Course_Code" value="{{$formateur->Course_Code}}">
-                                                    </div>
+                                                    </div> --}}
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                         <button type="submit" class="btn btn-primary">Save changes</button>
@@ -168,10 +168,10 @@
                             <label for="edit_email" class="form-label">password</label>
                             <input type="password" class="form-control" id="edit_email" name="password" required>
                         </div>
-                        <div class="mb-3">
+                        {{-- <div class="mb-3">
                             <label for="edit_type_cours" class="form-label">Type of Course</label>
                             <input type="text" class="form-control" id="edit_type_cours" name="type_cours" required>
-                        </div>
+                        </div> --}}
                         <div class="mb-3">
                             <label for="edit_specialite" class="form-label">specialité</label>
                             <select class="form-select" aria-label="Default select example" id="edit_specialite" name="specialite">
@@ -191,10 +191,10 @@
                             <label for="edit_cin" class="form-label">CIN</label>
                             <input type="text" class="form-control" id="edit_cin" name="cin" required>
                         </div>
-                        <div class="mb-3">
+                        {{-- <div class="mb-3">
                             <label for="edit_course_code" class="form-label">Course Code</label>
                             <input type="text" class="form-control" id="edit_course_code" name="Course_Code"  required>
-                        </div>
+                        </div> --}}
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-primary">Save changes</button>

@@ -145,7 +145,7 @@ public function student_view()
         $student = new User();
         $student->Username = $request->Username;
         $student->email = $request->email;
-        $student->age= $request->age ;
+        $student->cin= $request->cin ;
         $student->Telephone =$request->telephone ;
         // $student->module=$request->module;
         // $formateur->specialite_id = $request->specialite;
@@ -178,11 +178,11 @@ public function student_view()
         $student->Username = $request->Username;
         $student->email = $request->email;
         $student->password = Hash::make($request->password);
-        $student->specialite_id = $request->specialite;
+        // $student->specialite_id = $request->specialite;
         $student->telephone =$request->telephone ;
         $student->cin=$request->cin;
-        $student->Course_Code=$request->Course_Code;
-        $student->type_cours=$request->type_cours;
+        // $student->Course_Code=$request->Course_Code;
+        // $student->type_cours=$request->type_cours;
         $res = $student->update();
     
         if ($res) {
@@ -210,6 +210,12 @@ public function search(Request $request){
       }
     
     //dd($students);
+}
+public  function certificat()
+{
+    $id = session('LoginId_A');
+    $admin = admin::find($id);
+    return view('admin.certificat', compact('admin'));
 }
       
     
