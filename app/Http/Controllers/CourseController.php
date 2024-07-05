@@ -95,6 +95,7 @@ class CourseController extends Controller
            $stmt = $course->save();
             if($stmt){
                 session()->flash('success','le course a ete cree avec success');
+                // dd('hello');
                 return back();
             }else{
 

@@ -174,8 +174,7 @@
                 <div class="thumb">
                    {{-- <img src="images/thumb-1.png" alt=""> --}}
                    <video width="500" height="320" controls>
-                      <source src="{{ asset('Admin/video/' . basename($course->video_path)) }}" type="video/mp4">
-                      Your browser does not support the video tag.
+                    <source src="{{asset('storage/'.$course->video_path)}}" type="video/mp4">                      Your browser does not support the video tag.
                   </video>
                    {{-- <span>10 videos</span> --}}
                 </div>
